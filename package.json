@@ -1,0 +1,19 @@
+{
+  "name": "rest-api-sdo",
+  "version": "1.0.0",
+  "description": "A simple REST API in node to handle incoming and outgoing requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reddyse/rest-api-sdo.git"
+  },
+  "author": "Praneeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reddyse/rest-api-sdo/issues"
+  },
+  "homepage": "https://github.com/reddyse/rest-api-sdo#readme"
+}
