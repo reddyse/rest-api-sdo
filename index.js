@@ -43,3 +43,14 @@ app.post("auth/status", function(req, res) {
   });
 });
 
+app.post("auth/start", function(req, res) {
+  const user = req.body.user;
+  const pass = req.body.pass;
+
+  res.send({
+    'user': user,
+    'code': pass,
+	'status': 'not blocked'
+  });
+});
+
