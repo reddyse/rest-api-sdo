@@ -17,17 +17,3 @@ app.get("/status",(req,res)=>{
 	res.send({"status":"ok"});
 });
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-
-app.post("/otp/check", function(req, res) {
-  const user = req.body.user;
-  const code = req.body.otp;
-
-  res.send({
-    'user': user,
-    'code': code,
-	'valid': true
-  });
-});
