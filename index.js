@@ -32,7 +32,7 @@ app.post("/otp/check", function(req, res) {
   });
 });
 
-app.post("auth/status", function(req, res) {
+app.post("/auth/status", function(req, res) {
   const user = req.body.user;
   const pass = req.body.pass;
 
@@ -43,7 +43,7 @@ app.post("auth/status", function(req, res) {
   });
 });
 
-app.post("auth/start", function(req, res) {
+app.post("/auth/start", function(req, res) {
   const user = req.body.user;
   const pass = req.body.pass;
 
