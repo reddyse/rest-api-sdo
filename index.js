@@ -32,3 +32,14 @@ app.post("/otp/check", function(req, res) {
   });
 });
 
+app.post("auth/status", function(req, res) {
+  const user = req.body.user;
+  const pass = req.body.pass;
+
+  res.send({
+    'user': user,
+    'code': pass,
+	'status': 'approved'
+  });
+});
+
