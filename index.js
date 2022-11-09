@@ -50,7 +50,8 @@ app.post("/auth/start", function(req, res) {
   res.send({
     'user': user,
     'code': pass,
-	'status': 'not blocked'
+	'status': 'not blocked',
+	'authId':'approved'
   });
 });
 
