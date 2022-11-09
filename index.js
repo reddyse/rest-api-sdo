@@ -9,6 +9,25 @@ app.listen(PORT,()=>{
 	console.log('Running this application on the port ${PORT}');
 });
 
-app.get("/imprivata/auth/",(req,res)=>{
-	res.send("Hello there!!");
+app.get("/",(req,res)=>{
+	res.send({"status":"ok"});
+});
+	
+app.get("/status",(req,res)=>{
+	res.send({"status":"ok"});
+});
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+app.post('/otp/check', function(req, res) {
+  const user = req.body.user;
+  const code = req.body.otp;
+
+  res.send({
+    'user': user,
+    'code': code,
+	'valid': true
+  });
 });
